@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.outer-container {
+    background-color: hsl(222, 26%, 31%);
+    padding: 3rem 6rem;
+    margin: 3rem auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.top-section {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.calculator-screen-section {
+    margin: 0.8rem 0;
+    min-height: 3rem;
+    border-radius: 5px;
+    padding: 0.3rem;
+    text-align: end;
+    font-size: 25px;
+    background-color: hsl(224, 36%, 15%);
+}
+
+.calculator-Button-section {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    padding: 0.3rem;
+    font-size: 15px;
+    background-color: grey;
+}
+
+.calculator-screen-section div {
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.calculator-item {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    flex: 1 0 22%;
+    margin: 1.5%;
+    padding: 7px 0;
+    text-align: center;
+    min-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 1px 2px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.special-key {
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+#reset {
+    background-color: lightblue;
+    flex: 1 0 46%;
+}
+
+#equal {
+    background-color: lightblue;
+    flex: 1 0 46%;
+    background-color: orangered;
+}
+
+#del {
+    background-color: lightblue;
+}
+
+@media only screen and (max-width: 1000px) {
+    .outer-container {
+        width: 70%;
+        padding: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .outer-container {
+        width: 80%;
+        padding: 0.2rem;
+    }
+}
